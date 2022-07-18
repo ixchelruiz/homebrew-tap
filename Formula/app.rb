@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.0.0 at 2022-07-18T15:05:39.134307+02:00
+# Generated with JReleaser 1.0.0 at 2022-07-18T15:12:04.249799+02:00
 class App < Formula
   desc "Sample application"
   homepage "https://acme.com/awesome-app"
