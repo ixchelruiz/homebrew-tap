@@ -1,17 +1,17 @@
-# Generated with JReleaser 1.0.0-M1 at 2022-01-26T20:45:31.308016645Z
+# Generated with JReleaser 1.0.0 at 2022-07-18T15:05:39.134307+02:00
 class App < Formula
   desc "Sample application"
   homepage "https://acme.com/awesome-app"
   url "https://github.com/ixchelruiz/app/releases/download/v1.0.0/app-1.0.0.zip"
   version "1.0.0"
-  sha256 "1fcdaaddcd5c31237f7f7c7cb9a304c0e4080c8e54370bb3e486cf85df0dc272"
+  sha256 "5f57fb4151afac86fa4b392d64c36699126fe6962225f1f7c9065f0050a3a088"
   license "Apache-2.0"
 
   depends_on "openjdk@8"
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink "#{libexec}/bin/app"
+    bin.install_symlink "#{libexec}/bin/app" => "app"
   end
 
   test do
